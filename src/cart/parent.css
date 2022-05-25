@@ -1,0 +1,126 @@
+.container .nav .col {
+    background-color: rgb(82, 82, 161);;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .main-content .side-bar {
+    background-color: rgb(82, 82, 161);
+    color: white;
+}
+
+.container .main-content .side-bar ul {
+    list-style-type: none;
+    padding-left: 5px;
+}
+
+.container .nav .col .cart-section .dropdown-menu .cart-btn {
+    display: flex;
+    justify-content: center;
+
+}
+
+.container .nav .col .cart-section .dropdown-menu .cart-btn .btn {
+    display: block;
+    width: 100%;
+
+}
+
+.container .nav .col .cart-section .dropdown-menu .cart-products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(233, 228, 228);
+    height: 60px;
+
+
+}
+.container .nav .col .cart-section .dropdown-menu .cart-products .img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.container .cart-section .total{
+    background-color: rgb(82, 82, 161);
+}
+.container .cart-section .products .row .carts{
+    display: flex;
+    border: 1px solid rgb(220, 216, 216);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 1px 3px 5px 2px gray;
+    height: 100px;
+}
+.container .cart-section .products .row .carts img{
+    height: 80px;
+    width: 80px;
+}
+
+.container .main-content .content .loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(231, 227, 227);
+    pointer-events: none;
+}
+.container .main-content .content .loader .spinner-border{
+    height: 200px !important;
+    width: 200px !important;
+    color: red;
+}
+.container .main-content .content .loader .wait{
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@media screen and (max-width: 576px) {
+    .container .main-content .side-bar ul form li {
+        display: inline-block;
+        margin-right: 10px;
+
+    }
+    .container .main-content .side-bar{
+        margin-bottom: 10px;
+
+    }
+
+
+}
+
+@media screen and (min-width: 576px) {
+    .container .main-content .side-bar {
+        
+        min-height: 590px;
+        
+
+    }
+    .container .cart-section .total{
+        min-height: 590px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .container .nav .col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .nav .col .cart-section {
+        margin: 7px 0;
+    }
+
+
+}
